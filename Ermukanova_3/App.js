@@ -5,10 +5,10 @@ export default function App() {
   const [page, setPage] = useState(0);
 
   const images = [
-    require("./assets/screen1.jpg"),
-    require("./assets/screen2.jpg"),
-    require("./assets/screen3.jpg"),
-    require("./assets/screen4.jpg")
+    require("./assets/screen1.png"),
+    require("./assets/screen2.png"),
+    require("./assets/screen3.png"),
+    require("./assets/screen4.png")
   ];
 
   return (
@@ -30,14 +30,12 @@ export default function App() {
         ))}
       </ScrollView>
 
-      {/* Индикатор */}
       <View style={styles.dotContainer}>
         {images.map((_, i) => (
           <View key={i} style={[styles.dot, page === i && styles.activeDot]} />
         ))}
       </View>
 
-      {/* Button */}
       <Button title="Брондау" onPress={() => alert("Брондау басталды ✅")} />
     </SafeAreaView>
   );
