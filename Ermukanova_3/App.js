@@ -5,9 +5,10 @@ export default function App() {
   const [page, setPage] = useState(0);
 
   const images = [
-    require("./assets/plane1.jpg"),
-    require("./assets/plane2.jpg"),
-    require("./assets/plane3.jpg")
+    require("./assets/screen1.jpg"),
+    require("./assets/screen2.jpg"),
+    require("./assets/screen3.jpg"),
+    require("./assets/screen4.jpg")
   ];
 
   return (
